@@ -1,0 +1,11 @@
+{
+  "name": "client-landing-starter",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm run dev --prefix test",
+    "build": "npm run build --prefix test",
+    "preview": "npm run preview --prefix test",
+    "lint": "npm run lint --prefix test"
+  }
+}
