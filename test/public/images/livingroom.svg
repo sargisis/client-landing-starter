@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B7E55" />
+      <stop offset="50%" stop-color="#C5A880" />
+      <stop offset="100%" stop-color="#E6C89C" />
+    </linearGradient>
+    <linearGradient id="dark-marble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F2937" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="walnut" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4E3629" />
+      <stop offset="100%" stop-color="#2D1E17" />
+    </linearGradient>
+    <linearGradient id="fire" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FF3C00" />
+      <stop offset="50%" stop-color="#FF9600" />
+      <stop offset="100%" stop-color="#FFDE00" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C5A880" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#C5A880" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#080B13" />
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="300" r="400" fill="url(#glow)" />
+
+  <!-- Wall Wood Slats (Left Background) -->
+  <g opacity="0.4">
+    <rect x="60" y="40" width="10" height="520" fill="url(#walnut)" />
+    <rect x="80" y="40" width="10" height="520" fill="url(#walnut)" />
+    <rect x="100" y="40" width="10" height="520" fill="url(#walnut)" />
+    <rect x="120" y="40" width="10" height="520" fill="url(#walnut)" />
+    <rect x="140" y="40" width="10" height="520" fill="url(#walnut)" />
+    <rect x="160" y="40" width="10" height="520" fill="url(#walnut)" />
+    <rect x="180" y="40" width="10" height="520" fill="url(#walnut)" />
+    <rect x="200" y="40" width="10" height="520" fill="url(#walnut)" />
+  </g>
+
+  <!-- Main Marble TV Wall Panel (Right) -->
+  <rect x="230" y="40" width="510" height="420" fill="url(#dark-marble)" rx="8" stroke="url(#gold)" stroke-width="1.5" />
+  
+  <!-- Marble veins in TV wall -->
+  <path d="M 250,60 Q 300,150 450,120 T 650,220 T 700,300" fill="none" stroke="#4B5563" stroke-width="1.5" opacity="0.4" />
+  <path d="M 300,50 Q 350,160 500,130 T 700,230" fill="none" stroke="url(#gold)" stroke-width="0.75" opacity="0.3" />
+  <path d="M 500,80 Q 420,200 480,280 T 600,420" fill="none" stroke="#9CA3AF" stroke-width="1" opacity="0.3" />
+
+  <!-- Integrated TV Wall lighting -->
+  <rect x="226" y="50" width="4" height="400" fill="url(#gold)" opacity="0.5" filter="blur(2px)" />
+
+  <!-- Wall-mounted television -->
+  <rect x="300" y="100" width="370" height="210" fill="#000000" rx="4" stroke="#222" stroke-width="3" />
+  <!-- TV screen graphics (luxurious abstract waves) -->
+  <rect x="304" y="104" width="362" height="202" fill="#0E1325" />
+  <path d="M 304,260 Q 400,160 485,220 T 666,130" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.8" />
+  <path d="M 304,270 Q 390,200 495,240 T 666,160" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.4" />
+  <!-- TV status LED -->
+  <circle cx="485" cy="301" r="1.5" fill="#FFE5A3" />
+
+  <!-- Premium Floating Walnut Console Cabinet (Bottom) -->
+  <rect x="180" y="380" width="560" height="70" fill="url(#walnut)" rx="6" stroke="url(#gold)" stroke-width="1" />
+  <!-- Cabinet lines (compartments) -->
+  <line x1="320" y1="380" x2="320" y2="450" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  <line x1="460" y1="380" x2="460" y2="450" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  <line x1="600" y1="380" x2="600" y2="450" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  
+  <!-- Sleek Gold Pulls on Console -->
+  <line x1="230" y1="415" x2="270" y2="415" stroke="url(#gold)" stroke-width="2" stroke-linecap="round" />
+  <line x1="370" y1="415" x2="410" y2="415" stroke="url(#gold)" stroke-width="2" stroke-linecap="round" />
+  <line x1="510" y1="415" x2="550" y2="415" stroke="url(#gold)" stroke-width="2" stroke-linecap="round" />
+  <line x1="650" y1="415" x2="690" y2="415" stroke="url(#gold)" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Minimal Decorative Floating Wall Shelves (Left) -->
+  <rect x="60" y="160" width="140" height="8" fill="url(#walnut)" rx="1" stroke="rgba(197,168,128,0.3)" stroke-width="0.75" />
+  <!-- Golden sculpture on shelf -->
+  <path d="M 120,160 C 120,120 140,120 140,160 Z" fill="none" stroke="url(#gold)" stroke-width="2" />
+  <circle cx="130" cy="140" r="4" fill="url(#gold)" />
+
+  <rect x="60" y="280" width="140" height="8" fill="url(#walnut)" rx="1" stroke="rgba(197,168,128,0.3)" stroke-width="0.75" />
+  <!-- Luxury vase and plant on shelf -->
+  <path d="M 100,280 L 105,250 L 120,250 L 125,280 Z" fill="url(#gold)" />
+  <path d="M 112.5,250 Q 95,225 105,210" fill="none" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M 112.5,250 Q 130,225 120,210" fill="none" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Modern Integrated Bio-Fireplace (Bottom Center) -->
+  <rect x="300" y="475" width="370" height="60" fill="#0C101E" rx="8" stroke="url(#gold)" stroke-width="1.5" />
+  <!-- Bio Fire burner tray -->
+  <rect x="320" y="520" width="330" height="4" fill="#333" rx="1" />
+  <!-- Fire Flame vector path -->
+  <path d="M330,520 Q340,490 350,505 T370,495 T390,500 T410,485 T430,502 T450,490 T470,498 T490,480 T510,500 T530,492 T550,505 T570,485 T590,500 T610,495 T630,520 Z" fill="url(#fire)" />
+  <path d="M340,520 Q350,500 360,510 T390,505 T420,495 T450,510 T480,500 T510,505 T540,495 T570,510 T600,500 T620,520 Z" fill="#FFE5A3" opacity="0.6" />
+  <!-- Flame Ambient Glow -->
+  <rect x="310" y="480" width="350" height="45" fill="url(#glow)" filter="blur(4px)" />
+
+  <!-- Soft reflection/lighting on ground -->
+  <ellipse cx="400" cy="575" rx="350" ry="12" fill="url(#glow)" />
+</svg>

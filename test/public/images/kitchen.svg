@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B7E55" />
+      <stop offset="50%" stop-color="#C5A880" />
+      <stop offset="100%" stop-color="#E6C89C" />
+    </linearGradient>
+    <linearGradient id="dark-cabinet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E2640" />
+      <stop offset="100%" stop-color="#0E1326" />
+    </linearGradient>
+    <linearGradient id="wood-cabinet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5C4033" />
+      <stop offset="50%" stop-color="#8B5A2B" />
+      <stop offset="100%" stop-color="#5C4033" />
+    </linearGradient>
+    <linearGradient id="marble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F5F5F7" />
+      <stop offset="100%" stop-color="#E5E5EA" />
+    </linearGradient>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="100%" stop-color="#121829" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C5A880" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#C5A880" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
+  
+  <!-- Ambient Lights / Glows -->
+  <circle cx="400" cy="200" r="300" fill="url(#glow)" />
+  <circle cx="150" cy="450" r="150" fill="url(#glow)" />
+
+  <!-- Wall Panel -->
+  <rect x="50" y="50" width="700" height="350" fill="#182035" opacity="0.5" rx="8" />
+  <line x1="225" y1="50" x2="225" y2="400" stroke="url(#gold)" stroke-width="1" opacity="0.3" />
+  <line x1="400" y1="50" x2="400" y2="400" stroke="url(#gold)" stroke-width="1" opacity="0.3" />
+  <line x1="575" y1="50" x2="575" y2="400" stroke="url(#gold)" stroke-width="1" opacity="0.3" />
+
+  <!-- Upper Cabinets (Dark and Wood Combo) -->
+  <!-- Left Dark Cabinet -->
+  <rect x="80" y="80" width="180" height="150" fill="url(#dark-cabinet)" rx="4" stroke="rgba(197,168,128,0.2)" stroke-width="1" />
+  <line x1="170" y1="80" x2="170" y2="230" stroke="rgba(255,255,255,0.05)" />
+  <rect x="160" y="200" width="4" height="20" fill="url(#gold)" rx="1" />
+  <rect x="176" y="200" width="4" height="20" fill="url(#gold)" rx="1" />
+
+  <!-- Middle Shelf with Warm Lighting -->
+  <rect x="280" y="80" width="240" height="120" fill="url(#wood-cabinet)" rx="4" />
+  <!-- Under-shelf LED glow -->
+  <rect x="280" y="200" width="240" height="10" fill="url(#gold)" opacity="0.4" filter="blur(4px)" />
+  <rect x="290" y="110" width="60" height="70" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.5" />
+  <rect x="370" y="110" width="60" height="70" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.5" />
+  <rect x="450" y="110" width="60" height="70" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.5" />
+
+  <!-- Right Glass Cabinet -->
+  <rect x="540" y="80" width="180" height="150" fill="url(#dark-cabinet)" rx="4" stroke="rgba(197,168,128,0.2)" stroke-width="1" />
+  <rect x="550" y="90" width="75" height="130" fill="url(#glass)" rx="2" stroke="rgba(255,255,255,0.1)" />
+  <rect x="635" y="90" width="75" height="130" fill="url(#glass)" rx="2" stroke="rgba(255,255,255,0.1)" />
+  <!-- Wine glasses inside -->
+  <path d="M570,120 L585,120 M577.5,120 L577.5,135 M572.5,135 C572.5,145 582.5,145 582.5,135 Z" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.6" />
+  <path d="M600,120 L615,120 M607.5,120 L607.5,135 M602.5,135 C602.5,145 612.5,145 612.5,135 Z" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.6" />
+  <path d="M655,120 L670,120 M662.5,120 L662.5,135 M657.5,135 C657.5,145 667.5,145 667.5,135 Z" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.6" />
+
+  <!-- Back Countertop -->
+  <rect x="80" y="320" width="640" height="80" fill="url(#dark-cabinet)" rx="2" />
+  <rect x="80" y="310" width="640" height="12" fill="url(#marble)" rx="1" />
+  <!-- Backsplash LED glow -->
+  <rect x="80" y="300" width="640" height="8" fill="url(#gold)" opacity="0.3" filter="blur(2px)" />
+
+  <!-- Kitchen Hood & Stove -->
+  <rect x="360" y="220" width="80" height="12" fill="#333" rx="2" />
+  <rect x="350" y="308" width="100" height="2" fill="#ff5500" opacity="0.8" /> <!-- Hot burner glow -->
+
+  <!-- Premium Kitchen Island -->
+  <path d="M 120,380 L 680,380 L 650,540 L 150,540 Z" fill="url(#dark-cabinet)" />
+  <!-- Marble Top with isometric angle representation -->
+  <polygon points="100,370 700,370 680,390 120,390" fill="url(#marble)" stroke="url(#gold)" stroke-width="1.5" />
+  <!-- Marble Veins -->
+  <path d="M150,375 Q200,372 250,385 T400,378 T600,382" fill="none" stroke="#A8A8A8" stroke-width="1" opacity="0.5" />
+  <path d="M300,378 Q350,373 420,387" fill="none" stroke="#D4AF37" stroke-width="0.75" opacity="0.4" />
+  
+  <!-- Drawer lines and Gold Pulls on Island -->
+  <line x1="200" y1="420" x2="600" y2="420" stroke="rgba(255,255,255,0.07)" stroke-width="2" />
+  <line x1="200" y1="475" x2="600" y2="475" stroke="rgba(255,255,255,0.07)" stroke-width="2" />
+  <line x1="400" y1="390" x2="400" y2="540" stroke="rgba(255,255,255,0.07)" stroke-width="2" />
+  
+  <!-- Gold Handles on Island -->
+  <rect x="270" y="402" width="60" height="6" fill="url(#gold)" rx="2" />
+  <rect x="470" y="402" width="60" height="6" fill="url(#gold)" rx="2" />
+  <rect x="270" y="457" width="60" height="6" fill="url(#gold)" rx="2" />
+  <rect x="470" y="457" width="60" height="6" fill="url(#gold)" rx="2" />
+
+  <!-- Gold Luxury Faucet -->
+  <path d="M 400,370 C 400,330 420,320 420,340" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round" />
+  <rect x="395" y="367" width="10" height="4" fill="url(#gold)" />
+
+  <!-- Modern Pendant Lights hanging from top -->
+  <line x1="250" y1="0" x2="250" y2="120" stroke="url(#gold)" stroke-width="2" />
+  <line x1="550" y1="0" x2="550" y2="120" stroke="url(#gold)" stroke-width="2" />
+  
+  <!-- Pendant glass cover and warm bulb -->
+  <circle cx="250" cy="135" r="20" fill="url(#glass)" stroke="url(#gold)" stroke-width="1.5" />
+  <circle cx="250" cy="135" r="8" fill="#FFE5A3" />
+  <circle cx="250" cy="135" r="15" fill="url(#gold)" opacity="0.3" filter="blur(2px)" />
+
+  <circle cx="550" cy="135" r="20" fill="url(#glass)" stroke="url(#gold)" stroke-width="1.5" />
+  <circle cx="550" cy="135" r="8" fill="#FFE5A3" />
+  <circle cx="550" cy="135" r="15" fill="url(#gold)" opacity="0.3" filter="blur(2px)" />
+
+  <!-- Luxury Bar Stools -->
+  <!-- Left Stool -->
+  <ellipse cx="230" cy="460" rx="25" ry="8" fill="#3E3E3E" stroke="url(#gold)" stroke-width="1.5" />
+  <path d="M 215,464 L 210,560" stroke="url(#gold)" stroke-width="3" />
+  <path d="M 245,464 L 250,560" stroke="url(#gold)" stroke-width="3" />
+  <path d="M 230,466 L 230,560" stroke="url(#gold)" stroke-width="2" />
+  <ellipse cx="230" cy="558" rx="22" ry="5" fill="none" stroke="url(#gold)" stroke-width="2" />
+  <!-- Stool footrest -->
+  <line x1="212" y1="520" x2="248" y2="520" stroke="url(#gold)" stroke-width="2.5" />
+
+  <!-- Right Stool -->
+  <ellipse cx="570" cy="460" rx="25" ry="8" fill="#3E3E3E" stroke="url(#gold)" stroke-width="1.5" />
+  <path d="M 555,464 L 550,560" stroke="url(#gold)" stroke-width="3" />
+  <path d="M 585,464 L 590,560" stroke="url(#gold)" stroke-width="3" />
+  <path d="M 570,466 L 570,560" stroke="url(#gold)" stroke-width="2" />
+  <ellipse cx="570" cy="558" rx="22" ry="5" fill="none" stroke="url(#gold)" stroke-width="2" />
+  <!-- Stool footrest -->
+  <line x1="552" y1="520" x2="588" y2="520" stroke="url(#gold)" stroke-width="2.5" />
+
+  <!-- Soft reflection/lighting on ground -->
+  <ellipse cx="400" cy="570" rx="300" ry="15" fill="url(#glow)" />
+</svg>
