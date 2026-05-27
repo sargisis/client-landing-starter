@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "npm run dev --prefix test",
     "build": "npm run build --prefix test",
-    "preview": "npm run preview --prefix test",
-    "lint": "npm run lint --prefix test"
+    "preview": "wrangler dev",
+    "lint": "npm run lint --prefix test",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.95.0"
   }
 }
